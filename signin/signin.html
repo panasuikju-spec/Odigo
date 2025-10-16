@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Увійти - Odigo</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="img/design/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Header -->
+        <header class="login-header">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <img class="odigo-logo" src="img/design/odigo-logo0.svg" alt="Odigo Logo" />
+                </div>
+                <a href="index.html" class="back-home">← На головну</a>
+            </nav>
+        </header>
+
+        <!-- Login Section -->
+        <section class="login-section">
+            <div class="login-content">
+                <div class="login-card">
+                    <div class="login-header">
+                        <h1>Увійти в акаунт</h1>
+                        <p>Ласкаво просимо назад! Будь ласка, увійдіть у свій акаунт</p>
+                    </div>
+                    
+                    <form class="login-form">
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <div class="input-oval"></div>
+                                <input type="email" placeholder="Електронна пошта" required>
+                                <div class="input-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <div class="input-oval"></div>
+                                <input type="password" placeholder="Пароль" required>
+                                <div class="input-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-options">
+                            <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Запам'ятати мене
+                            </label>
+                            <a href="#" class="forgot-password">Забули пароль?</a>
+                        </div>
+                        
+                        <button type="submit" class="login-btn">
+                            <span class="btn-bg"></span>
+                            <span class="btn-text">УВІЙТИ</span>
+                        </button>
+                        
+                        <div class="divider">
+                            <span>або</span>
+                        </div>
+                        
+                        <button type="button" class="social-btn google-btn">
+                            <img src="img/design/google-icon.svg" alt="Google" onerror="this.style.display='none'">
+                            <span>Увійти через Google</span>
+                        </button>
+                        
+                        <button type="button" class="social-btn facebook-btn">
+                            <img src="img/design/facebook-icon.svg" alt="Facebook" onerror="this.style.display='none'">
+                            <span>Увійти через Facebook</span>
+                        </button>
+                        
+                        <div class="register-link">
+                            Не маєте акаунту? <a href="register.html" class="register-now">Зареєструватися зараз</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Background -->
+        <div class="login-bg">
+            <img src="img/design/image0.png" alt="Japan Landscape" />
+            <div class="login-overlay"></div>
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
