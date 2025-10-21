@@ -53,7 +53,7 @@ body {
 .nav__menu {
     display: flex;
     list-style: none;
-    gap: 2.0rem;
+    gap: 3.0rem;
 }
 
 .nav__menu a {
@@ -350,7 +350,233 @@ body {
 .explore-btn:hover {
     background: #ff5252;
 }
+#japanClock {
+    position: fixed;      
+    top: 10px;           
+    right: 10px;          
+    background-color: rgba(0,0,0,0.7); 
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;        
+}
+/* Weather Section */
+.weather-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
 
+.weather-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.weather-widget {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.weather-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.weather-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.weather-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.weather-header h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.weather-icon {
+    font-size: 2.5rem;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+}
+
+.weather-temp {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #006DFE;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.weather-desc {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.weather-details .detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.weather-details .detail:last-child {
+    border-bottom: none;
+}
+
+.weather-details .label {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.weather-details .value {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.weather-update {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.weather-update p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.refresh-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.refresh-btn:hover {
+    background: white;
+    color: #667eea;
+    transform: scale(1.05);
+}
+
+/* Weather Section */
+.weather-section {
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    text-align: center;
+}
+
+.weather-section a {
+    display: inline-block;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+/* Стилі для погодного віджета */
+.weatherwidget-io {
+    border-radius: 20px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
+    overflow: hidden !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+}
+
+.weatherwidget-io:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3) !important;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .weather-section {
+        padding: 1.5rem 0;
+    }
+    
+    .weatherwidget-io {
+        max-width: 400px !important;
+        margin: 0 1rem !important;
+        border-radius: 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-section {
+        padding: 1rem 0;
+    }
+    
+    .weatherwidget-io {
+        max-width: 350px !important;
+        margin: 0 0.5rem !important;
+        border-radius: 12px !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .weatherwidget-io {
+        max-width: 320px !important;
+        margin: 0 0.5rem !important;
+    }
+}
+
+/* Додаткові стилі для кращого вигляду */
+.weather-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Якщо хочете додати заголовок над віджетом */
+.weather-section::before {
+    content: "Погода в  Токіо";
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
 /* Map Section */
 .map-section {
   padding: 60px 0;
@@ -376,62 +602,104 @@ body {
 
 
 /* Footer */
-.locations-footer {
+.footer {
     background: #333;
     color: white;
     padding: 3rem 0 1rem;
 }
 
-.footer-content {
+.footer__content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 3rem;
     margin-bottom: 2rem;
 }
 
-.footer-logo img {
+.footer__logo img {
     height: 40px;
     width: auto;
 }
 
-.footer-links {
+.footer__links {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-.footer-column h4 {
+.footer__column h4 {
     margin-bottom: 1rem;
     color: #006DFE;
     font-size: 1.1rem;
 }
 
-.footer-column ul {
+.footer__column ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-column li {
-    margin-bottom: 0.5rem;
+.footer__column ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; 
+    gap: 8px; 
 }
 
-.footer-column a {
+.footer__column ul li img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0; 
+}
+
+
+.social-link {
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.social-facebook {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #1877F2; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.social-youtube {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #FFFFFF; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.social-instagram {
+    font-family: 'SF Pro Display', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer__column a {
     color: #ccc;
     text-decoration: none;
     transition: color 0.3s;
     font-size: 0.9rem;
 }
 
-.footer-column a:hover {
+.footer__column a:hover {
     color: #006DFE;
 }
 
-.footer-bottom {
+.footer__bottom {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid #555;
 }
 
-.footer-bottom a {
+.footer__bottom a {
     color: #006DFE;
     text-decoration: none;
 }
