@@ -48,7 +48,7 @@ body {
 .nav__menu {
     display: flex;
     list-style: none;
-    gap: 2.0rem;
+    gap: 3.0rem;
 }
 
 .nav__menu a {
