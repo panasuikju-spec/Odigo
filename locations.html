@@ -23,7 +23,7 @@
                     
                     <li><a href="#" class="login-link">Увійти</a></li>
                     <li><a href="author.html">Автор</a></li>
-                    <li><a href="index.html" class="back-home">← Головна</a></li>
+                    <!--<li><a href="index.html" class="back-home">← Головна</a></li>-->
                 </ul>
                 <div class="nav__hamburger">
                     <span></span>
@@ -277,6 +277,15 @@
             </div>
         </section>
 
+            <!-- Weather Widget -->
+        <section class="weather-section">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="Tokyo" data-label_2="WEATHER" data-theme="original" >Tokyo WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+        </section>
+        
+
        <!-- Map Section -->
         <section class="map-section" id="map">
             <h2>Мапа Японії</h2>
@@ -286,15 +295,14 @@
 
 
 
-        <!-- Footer -->
-        <footer class="locations-footer">
+        <footer class="footer">
             <div class="container">
-                <div class="footer-content">
-                    <div class="footer-logo">
+                <div class="footer__content">
+                    <div class="footer__logo">
                         <img src="img/design/odigo-logo1.svg" alt="Odigo Logo" />
                     </div>
-                    <div class="footer-links">
-                        <div class="footer-column">
+                    <div class="footer__links">
+                        <div class="footer__column">
                             <h4>Компанія</h4>
                             <ul>
                                 <li><a href="about.html">Про нас</a></li>
@@ -302,25 +310,31 @@
                                 <li><a href="privacy.html">Privacy Policy</a></li>
                             </ul>
                         </div>
-                        <div class="footer-column">
+                        <div class="footer__column">
                             <h4>Локації</h4>
                             <ul>
-                                   <li><a href="https://uk.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BA%D1%96%D0%BE">Tокіо</a></li>
+                                <li><a href="https://uk.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BA%D1%96%D0%BE">Tокіо</a></li>
                                 <li><a href="https://uk.wikipedia.org/wiki/%D0%9A%D1%96%D0%BE%D1%82%D0%BE">Kіото</a></li>
-                                <li><a href="https://uk.wikipedia.org/wiki/%D0%9E%D1%81%D0%B0%D0%BA%D0%B0">Oсака</a></li>                             
+                                <li><a href="https://uk.wikipedia.org/wiki/%D0%9E%D1%81%D0%B0%D0%BA%D0%B0">Oсака</a></li>                                
                             </ul>
                         </div>
-                        <div class="footer-column">
+                       <div class="footer__column footer__column--social">
                             <h4>Соціальні Мережі</h4>
                             <ul>
-                                <li><a href="https://www.facebook.com/groups/1592031101017793/?ref=share">Facebook</a></li>
-                                <li><a href="https://youtube.com/@allansu?si=gZR5SvcM1IqWSDZx">Youtube</a></li>
-                                <li><a href="https://www.instagram.com/japantravelcom?igsh=eXp2eDM3YWVqcW1t">Instagram</a></li>                                
+                                <li><img src="img/design/facebook.svg" alt="Facebook"> 
+                                    <a href="https://www.facebook.com/groups/1592031101017793/?ref=share" class="social-link social-facebook">Facebook</a>
+                                </li>
+                                <li><img src="img/design/youtube.svg" alt="YouTube">
+                                    <a href="https://youtube.com/@allansu?si=gZR5SvcM1IqWSDZx" class="social-link social-youtube">YouTube</a>
+                                </li>
+                                <li><img src="img/design/instagram.svg" alt="Instagram">
+                                    <a href="https://www.instagram.com/japantravelcom?igsh=eXp2eDM3YWVqcW1t" class="social-link social-instagram">Instagram</a>
+                                </li>                                
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="footer-bottom">
+                <div class="footer__bottom">
                     <a href="author.html">&copy; Odigo</a>
                 </div>
             </div>
